@@ -188,7 +188,7 @@ class Input(Nodes, AbstractInput):
         # language=rst
         """
         Instantiates a layer of input neurons.
-
+        dsadấdâdsada
         :param n: The number of neurons in the layer.
         :param shape: The dimensionality of the layer.
         :param traces: Whether to record decaying spike traces.
