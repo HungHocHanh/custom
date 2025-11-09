@@ -89,8 +89,12 @@ network.add_connection(inpt_middle, source="Input Layer", target="Hidden Layer")
 network.add_connection(middle_out, source="Hidden Layer", target="Output Layer")
 
 # Load the Breakout environment.
-environment = GymEnvironment("BreakoutDeterministic-v4")
+# Load the Breakout environment with rendering enabled.
+environment = GymEnvironment("BreakoutDeterministic-v4", render_mode="human")
+
+# Reset and render once to show the screen
 environment.reset()
+environment.render()
 
 # Build pipeline from specified components.
 pipeline = EnvironmentPipeline(
