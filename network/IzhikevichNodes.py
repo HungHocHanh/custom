@@ -171,7 +171,7 @@ class AbstractInput(ABC):
 class Input(Nodes, AbstractInput):
     # language=rst
     """
-    Layer of nodes with user-specified spiking behavior.
+    Layer of nodes with user-specified spiking behavior.sadadsfdsf
     """
 
     def __init__(
